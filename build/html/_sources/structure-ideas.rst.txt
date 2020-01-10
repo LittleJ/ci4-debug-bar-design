@@ -69,6 +69,8 @@ Cons:
 
 The current CSS stylesheet, but colors have been set apart.
 
+Full code: https://gist.github.com/LittleJ/40e12cce68b3626729564fc2e8877f80
+
 .. code-block:: css
 
   #debug-icon {
@@ -129,6 +131,8 @@ Cons:
 -----------------------------------
 
 The current CSS stylesheet, but colors have been set apart, and every elements with the same color have been merged.
+
+Full code: https://gist.github.com/LittleJ/31d173aa4eddef80d85af2cc80722cae
 
 .. code-block:: css
 
