@@ -11,3 +11,5 @@ To improve the graphical interface, I think there are two aspects:
 * The structure
 
 * The colors
+
+Read more here: https://littlej.github.io/ci4-debug-bar-design/build/html/
