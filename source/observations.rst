@@ -14,14 +14,14 @@ Color codes are not all written the same way. And there is no color scheme defin
 
   /* Styles extracted from the current CSS */
   #debug-bar span.ci-label .badge.active {
-  	background-color: red;
+    background-color: red;
   }
   #debug-bar button:hover {
-  	background-color: #eaeaea;
+    background-color: #eaeaea;
   }
   #debug-bar table strong {
-  	font-weight: 500;
-  	color: rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
   }
 
 
@@ -32,25 +32,25 @@ Some other elements are not using the same units too.
   /* Styles extracted from the current CSS */
   #debug-bar span.ci-label .badge {
     /* ... */
-  	border-radius: 10rem;
+    border-radius: 10rem;
     /* ... */
   }
   #debug-bar button {
     /* ... */
-  	border-radius: 4px;
+    border-radius: 4px;
     /* ... */
   }
 
   /* Styles extracted from the current CSS */
   #debug-bar span.ci-label img {
     /* ... */
-  	margin: 6px 3px 6px 0;
+    margin: 6px 3px 6px 0;
     /* ... */
   }
 
   #debug-bar span.ci-label .badge {
     /* ... */
-  	margin-left: 0.5em;
+    margin-left: 0.5em;
     /* ... */
   }
 
@@ -70,29 +70,29 @@ The CSS file is not optimized in terms of organization.
   #debug-bar h1,
   #debug-bar h2,
   #debug-bar h3 {
-  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	color: #666;
-  	line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+    line-height: 1.5;
   }
 
   /* Line 58 ... */
   #debug-bar a {
-  	text-decoration: none;
+    text-decoration: none;
   }
 
   /* Line 100 ... Here we go again with h1 */
   #debug-bar h1 {
-  	font-size: 16px;
-  	line-height: 36px;
-  	font-weight: 500;
-  	margin: 0 16px 0 0;
-  	padding: 0;
-  	text-align: left;
-  	display: inline-block;
-  	position: absolute;
-  	right: 30px;
-  	top: 0;
-  	bottom: 0;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 0 16px 0 0;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
   }
   #debug-bar-link {
     /* ... */
@@ -127,7 +127,7 @@ The CSS file is not optimized in terms of compatibility between browsers, old as
   /* Styles extracted from the current CSS */
   #debug-bar button {
     /* ... */
-  	border-radius: 4px;
+    border-radius: 4px;
     /* ... */
   }
 
@@ -139,3 +139,36 @@ The CSS file is not optimized in terms of compatibility between browsers, old as
             border-radius: 4px;
     /* ... */
   }
+
+
+
+
+Interferences
+=============
+
+Some styles are duplicated and defined twice.
+
+.. code-block:: css
+
+  /* Styles extracted from the current CSS */
+    #debug-bar h1,
+    #debug-bar h2,
+    #debug-bar h3 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #666;
+      line-height: 1.5;  /* FIRST TIME */
+    }
+
+    #debug-bar h1 {
+      font-size: 16px;
+      line-height: 36px; /* SECOND TIME - NOT THE SAME UNIT */
+      font-weight: 500;
+      margin: 0 16px 0 0;
+      padding: 0;
+      text-align: left;
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 0;
+      bottom: 0;
+    }

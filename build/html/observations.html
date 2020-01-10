@@ -84,6 +84,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#normalization">Normalization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#file-structure">File structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cross-browsers-support">Cross-browsers support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interferences">Interferences</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="html-layout.html">HTML Layout</a></li>
@@ -158,14 +159,14 @@
 <p>Color codes are not all written the same way. And there is no color scheme defined.</p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Styles extracted from the current CSS */</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">span</span><span class="p">.</span><span class="nc">ci-label</span> <span class="p">.</span><span class="nc">badge</span><span class="p">.</span><span class="nc">active</span> <span class="p">{</span>
-      <span class="k">background-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#eaeaea</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#eaeaea</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">table</span> <span class="nt">strong</span> <span class="p">{</span>
-      <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
-      <span class="k">color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -173,25 +174,25 @@
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Styles extracted from the current CSS */</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">span</span><span class="p">.</span><span class="nc">ci-label</span> <span class="p">.</span><span class="nc">badge</span> <span class="p">{</span>
   <span class="c">/* ... */</span>
-      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">rem</span><span class="p">;</span>
   <span class="c">/* ... */</span>
 <span class="p">}</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
   <span class="c">/* ... */</span>
-      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
   <span class="c">/* ... */</span>
 <span class="p">}</span>
 
 <span class="c">/* Styles extracted from the current CSS */</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">span</span><span class="p">.</span><span class="nc">ci-label</span> <span class="nt">img</span> <span class="p">{</span>
   <span class="c">/* ... */</span>
-      <span class="k">margin</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
   <span class="c">/* ... */</span>
 <span class="p">}</span>
 
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">span</span><span class="p">.</span><span class="nc">ci-label</span> <span class="p">.</span><span class="nc">badge</span> <span class="p">{</span>
   <span class="c">/* ... */</span>
-      <span class="k">margin-left</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">em</span><span class="p">;</span>
   <span class="c">/* ... */</span>
 <span class="p">}</span>
 </pre></div>
@@ -206,29 +207,29 @@
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h1</span><span class="o">,</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h2</span><span class="o">,</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h3</span> <span class="p">{</span>
-      <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
-      <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
-      <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">/* Line 58 ... */</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">a</span> <span class="p">{</span>
-      <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">/* Line 100 ... Here we go again with h1 */</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h1</span> <span class="p">{</span>
-      <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
-      <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-      <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
-      <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-      <span class="k">right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+  <span class="k">right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">#</span><span class="nn">debug-bar-link</span> <span class="p">{</span>
   <span class="c">/* ... */</span>
@@ -258,7 +259,7 @@
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Styles extracted from the current CSS */</span>
 <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
   <span class="c">/* ... */</span>
-      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
   <span class="c">/* ... */</span>
 <span class="p">}</span>
 
@@ -270,6 +271,34 @@
           <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
   <span class="c">/* ... */</span>
 <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="interferences">
+<h2>Interferences<a class="headerlink" href="#interferences" title="Permalink to this headline">¶</a></h2>
+<p>Some styles are duplicated and defined twice.</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Styles extracted from the current CSS */</span>
+  <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h1</span><span class="o">,</span>
+  <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h2</span><span class="o">,</span>
+  <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>  <span class="c">/* FIRST TIME */</span>
+  <span class="p">}</span>
+
+  <span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* SECOND TIME - NOT THE SAME UNIT */</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">16</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
 </pre></div>
 </div>
 </div>

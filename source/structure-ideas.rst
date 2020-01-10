@@ -19,38 +19,38 @@ The current CSS stylesheet.
 
   /* Extract from the original CSS */
   #debug-icon {
-  	position: fixed;
-  	bottom: 0;
-  	right: 0;
-  	width: 36px;
-  	height: 36px;
-  	background: #fff;
-  	border: 1px solid #ddd;
-  	margin: 0px;
-  	z-index: 10000;
-  	box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
-  	clear: both;
-  	text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 0px;
+    z-index: 10000;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    clear: both;
+    text-align: center;
   }
   #debug-bar {
-  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	font-size: 16px;
-  	font-weight: 400;
-  	line-height: 36px;
-  	background: #fff;
-  	position: fixed;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
-  	height: 36px;
-  	z-index: 10000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 10000;
   }
   #debug-bar button {
-  	border: 1px solid #ddd;
-  	background-color: #fff;
-  	cursor: pointer;
-  	border-radius: 4px;
-  	color: #333;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #333;
   }
 
 Pros:
@@ -72,46 +72,46 @@ The current CSS stylesheet, but colors have been set apart.
 .. code-block:: css
 
   #debug-icon {
-  	position: fixed;
-  	bottom: 0;
-  	right: 0;
-  	width: 36px;
-  	height: 36px;
-  	border: 1px solid;
-  	margin: 0px;
-  	z-index: 10000;
-  	box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
-  	clear: both;
-  	text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid;
+    margin: 0px;
+    z-index: 10000;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    clear: both;
+    text-align: center;
   }
   #debug-bar {
-  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	font-size: 16px;
-  	font-weight: 400;
-  	line-height: 36px;
-  	position: fixed;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
-  	height: 36px;
-  	z-index: 10000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 10000;
   }
   #debug-bar button {
-  	border: 1px solid;
-  	cursor: pointer;
-  	border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 4px;
   }
   #debug-icon {
-  	background: #fff;
-  	border-color: #ddd;
+    background: #fff;
+    border-color: #ddd;
   }
   #debug-bar {
-  	background: #fff;
+    background: #fff;
   }
   #debug-bar button {
-  	border-color: #ddd;
-  	background-color: #fff;
-  	color: #333;
+    border-color: #ddd;
+    background-color: #fff;
+    color: #333;
   }
 
 Pros:
@@ -175,6 +175,8 @@ The current CSS stylesheet, but colors have been set apart, and every elements w
     color: #333;
   }
 
+Pros:
+
 * A change of color is easier, and applied to all concerned elements automatically
 * The file is independent
 
@@ -192,64 +194,66 @@ Cons:
 
   // Applied to the extract //
   @mixin border-radius($radius) {
-  	border-radius: $radius
-  	-webkit-border-radius: $radius
-  	-moz-border-radius: $radius
+            border-radius: $radius;
+       -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
   }
   @mixin box-shadow($params) {
-    -webkit-box-shadow: $params
-       -moz-box-shadow: $params
-            box-shadow: $params
+            box-shadow: $params;
+       -moz-box-shadow: $params;
+    -webkit-box-shadow: $params;
   }
-  $light: #FFFFFF
-  $gray: #DDDDDDD
-  $dark: #333333
+
+  $light: #FFFFFF;
+  $gray: #DDDDDDD;
+  $dark: #333333;
+
   #debug-icon {
-    position: fixed
-    bottom: 0
-    right: 0
-    width: 36px
-    height: 36px
-    border: 1px solid
-    margin: 0px
-    z-index: 10000
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid;
+    margin: 0px;
+    z-index: 10000;
     /* TODO - Cross browsers optimizations */
-    @include box-shadow( 0 -3px 10px rgba(0, 0, 0, 0.1) )
-    clear: both
-    text-align: center
+    @include box-shadow( 0 -3px 10px rgba(0, 0, 0, 0.1) );
+    clear: both;
+    text-align: center;
   }
   #debug-bar {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-    font-size: 16px
-    font-weight: 400
-    line-height: 36px
-    position: fixed
-    bottom: 0
-    left: 0
-    right: 0
-    height: 36px
-    z-index: 10000
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 10000;
 
     // Nested elements - Easier to read //
     button {
-      border: 1px solid
-      cursor: pointer
+      border: 1px solid;
+      cursor: pointer;
       /* Improved box-shadow management - Cross browsers */
-      @include border-radius(4px)
+      @include border-radius(4px);
     }
 
   }
   #debug-icon,
   #debug-bar,
   #debug-bar button {
-    background-color: $light
+    background-color: $light;
   }
   #debug-icon,
   #debug-bar button {
-    border-color: $gray
+    border-color: $gray;
   }
   #debug-bar button {
-    color: #$dark
+    color: #$dark;
   }
 
 Pros:
