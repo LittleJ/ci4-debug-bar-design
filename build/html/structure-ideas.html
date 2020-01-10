@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Structure ideas &mdash; CI4 DEBUG BAR DESIGN 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Colors ideas" href="colors-ideas.html" />
+    <link rel="prev" title="Observations" href="observations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #DD4814" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> CI4 DEBUG BAR DESIGN
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observations.html">Observations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Structure ideas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#colors-management">Colors management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#original-version">“Original” version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colors-extracted-version">“Colors extracted” version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colors-extracted-merged-version">“Colors extracted &amp; merged” version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sass-version">“SASS” version</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="colors-ideas.html">Colors ideas</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CI4 DEBUG BAR DESIGN</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Structure ideas</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="structure-ideas">
+<h1>Structure ideas<a class="headerlink" href="#structure-ideas" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="colors-management">
+<h2>Colors management<a class="headerlink" href="#colors-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="original-version">
+<h3>“Original” version<a class="headerlink" href="#original-version" title="Permalink to this headline">¶</a></h3>
+<p>The current CSS stylesheet.</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Extract from the original CSS */</span>
+<span class="p">#</span><span class="nn">debug-icon</span> <span class="p">{</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ddd</span><span class="p">;</span>
+      <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">z-index</span><span class="p">:</span> <span class="mi">10000</span><span class="p">;</span>
+      <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-3</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
+      <span class="k">clear</span><span class="p">:</span> <span class="kc">both</span><span class="p">;</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="p">{</span>
+      <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+      <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">font-weight</span><span class="p">:</span> <span class="mi">400</span><span class="p">;</span>
+      <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">z-index</span><span class="p">:</span> <span class="mi">10000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ddd</span><span class="p">;</span>
+      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>Each element of the debug bar has a corresponding style in the file</p></li>
+<li><p>The file is independent, no need of third party tools</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>Difficult to maintain. If you want to change a color for example, you have to search and do it in several places. And we can see that it leads to colors inconsistency.</p></li>
+</ul>
+</div>
+<div class="section" id="colors-extracted-version">
+<h3>“Colors extracted” version<a class="headerlink" href="#colors-extracted-version" title="Permalink to this headline">¶</a></h3>
+<p>The current CSS stylesheet, but colors have been set apart.</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">debug-icon</span> <span class="p">{</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span><span class="p">;</span>
+      <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">z-index</span><span class="p">:</span> <span class="mi">10000</span><span class="p">;</span>
+      <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-3</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
+      <span class="k">clear</span><span class="p">:</span> <span class="kc">both</span><span class="p">;</span>
+      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="p">{</span>
+      <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+      <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">font-weight</span><span class="p">:</span> <span class="mi">400</span><span class="p">;</span>
+      <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+      <span class="k">z-index</span><span class="p">:</span> <span class="mi">10000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+      <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span><span class="p">;</span>
+      <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-icon</span> <span class="p">{</span>
+      <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">border-color</span><span class="p">:</span> <span class="mh">#ddd</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="p">{</span>
+      <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+      <span class="k">border-color</span><span class="p">:</span> <span class="mh">#ddd</span><span class="p">;</span>
+      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>Each element of the debug bar has a corresponding style in the file</p></li>
+<li><p>The file is independent</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>Still difficult to maintain. You have to create styles, and don’t forget to isolate the colors. Elements with colors will be styled twice.</p></li>
+</ul>
+</div>
+<div class="section" id="colors-extracted-merged-version">
+<h3>“Colors extracted &amp; merged” version<a class="headerlink" href="#colors-extracted-merged-version" title="Permalink to this headline">¶</a></h3>
+<p>The current CSS stylesheet, but colors have been set apart, and every elements with the same color have been merged.</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">debug-icon</span> <span class="p">{</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="p">:</span> <span class="mi">10000</span><span class="p">;</span>
+  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-3</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
+  <span class="k">clear</span><span class="p">:</span> <span class="kc">both</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">400</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">36</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="p">:</span> <span class="mi">10000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-icon</span><span class="o">,</span>
+<span class="p">#</span><span class="nn">debug-bar</span><span class="o">,</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-icon</span><span class="o">,</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+  <span class="k">border-color</span><span class="p">:</span> <span class="mh">#ddd</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">#</span><span class="nn">debug-bar</span> <span class="nt">button</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>A change of color is easier, and applied to all concerned elements automatically</p></li>
+<li><p>The file is independent</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>Still difficult to maintain. You have to create styles, and don’t forget to isolate the colors. Elements with colors will be styled twice.</p></li>
+</ul>
+</div>
+<div class="section" id="sass-version">
+<h3>“SASS” version<a class="headerlink" href="#sass-version" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>// Applied to the extract //
+@mixin border-radius($radius) {
+      border-radius: $radius
+      -webkit-border-radius: $radius
+      -moz-border-radius: $radius
+}
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params
+     -moz-box-shadow: $params
+          box-shadow: $params
+}
+$light: #FFFFFF
+$gray: #DDDDDDD
+$dark: #333333
+#debug-icon {
+  position: fixed
+  bottom: 0
+  right: 0
+  width: 36px
+  height: 36px
+  border: 1px solid
+  margin: 0px
+  z-index: 10000
+  /* TODO - Cross browsers optimizations */
+  @include box-shadow( 0 -3px 10px rgba(0, 0, 0, 0.1) )
+  clear: both
+  text-align: center
+}
+#debug-bar {
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 36px
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  height: 36px
+  z-index: 10000
+
+  // Nested elements - Easier to read //
+  button {
+    border: 1px solid
+    cursor: pointer
+    /* Improved box-shadow management - Cross browsers */
+    @include border-radius(4px)
+  }
+
+}
+#debug-icon,
+#debug-bar,
+#debug-bar button {
+  background-color: $light
+}
+#debug-icon,
+#debug-bar button {
+  border-color: $gray
+}
+#debug-bar button {
+  color: #$dark
+}
+</pre></div>
+</div>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>Modern</p></li>
+<li><p>Automated (variables, mixins …)</p></li>
+<li><p>Easier to maintain</p></li>
+<li><p>More “visual” (with features like nested elements)</p></li>
+<li><p>“Makes room” for bigger improvements (more complicated layouts, if needed)</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>Use a preprocessor, so how will the compilation be done? Should it be integrated with scripts (like with “Gulp”), or the developers provide the final files directly? Do tests have to be set up then? In which cases ?</p></li>
+<li><p>Two files (.sass &amp; .css) on the server instead of one (.css)</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="colors-ideas.html" class="btn btn-neutral float-right" title="Colors ideas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="observations.html" class="btn btn-neutral float-left" title="Observations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Written by <a href="https://www.littlej.fr" title="Little J" target="_blank">Little J</a> for <a href="https://codeigniter.com" title="CodeIgniter" target="_blank">CodeIgniter</a>'s community
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

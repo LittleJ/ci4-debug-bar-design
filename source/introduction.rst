@@ -1,4 +1,8 @@
-# CI4 DEBUG BAR DESIGN
+************
+Introduction
+************
+
+
 
 I proposed an improvement of the debug bar, by adding a "dark" mode: `https://github.com/codeigniter4/CodeIgniter4/pull/2478 <https://github.com/codeigniter4/CodeIgniter4/pull/2478>`_.
 
