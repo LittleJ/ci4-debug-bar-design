@@ -13,3 +13,4 @@ CI4 DEBUG BAR DESIGN
    html-layout
    structure-ideas
    colors-ideas
+   guidelines
